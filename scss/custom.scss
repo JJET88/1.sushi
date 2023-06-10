@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+
+
+//bootstrap customize
+
+$navbar-nav-link-padding-x:1.5rem;
+$font-family-sans-serif: Poppins;
+
+$body-bg:hsl(19, 100%, 96%);
+$primary : hsl(19, 64%, 54%);
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+@import "../node_modules/remixicon/fonts/remixicon.css";
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.spacer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.size{
+    font-size: 25px;
+    color: orange;
+}
+
+.card-img-top{
+    margin-top: -36px;
+}
+
+.direction{
+    transform: rotate(30deg) translateY(-2px) translateX(20px);
+    
+}
+
+#home{
+    // background: url(/img/leaf-branch-2.png) no-repeat top left, url(/img/leaf-branch-4.png) no-repeat bottom right;
+    position: relative;
+}
+#home::before{
+    content: url(/img/leaf-branch-2.png);
+    opacity: 0.2;
+    position: absolute;
+    transform:translateX(-50px) rotate(90deg) ;
+    
+
+}
